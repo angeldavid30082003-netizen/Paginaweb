@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ángel David Garzón | Junior Software Engineer · Bogotá</title>
+    <meta name="description"
+        content="Portafolio de Ángel David Garzón Prieto — Ingeniero de Software Junior. Desarrollador Full-Stack, soporte TI y automatización con IA. Bogotá, Colombia.">
+    <meta name="author" content="Ángel David Garzón Prieto">
+    <meta name="keywords"
+        content="software engineer, junior developer, full-stack, Python, JavaScript, TypeScript, Node.js, Spring Boot, Colombia, Bogotá, Active Directory, AI Agent, Gemini API">
+    <meta property="og:title" content="Ángel David Garzón | Software Engineer">
+    <meta property="og:description"
+        content="Junior Software Engineer · Bogotá D.C., Colombia. Full-Stack, TI Support & AI Integration.">
+    <meta property="og:type" content="website">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ═══════════════════════════════════════════
+         NAVBAR
+         ═══════════════════════════════════════════ -->
+    <header class="navbar" role="banner">
+        <div class="nav-container">
+            <a href="#home" class="logo" aria-label="Ir al inicio">
+                <span class="logo-accent">&lt;</span>Angel<span class="logo-accent">.dev /&gt;</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu" aria-label="Navegación principal">
+                <a href="#home" class="nav-link active">Inicio</a>
+                <a href="#terminal-section" class="nav-link">Consola</a>
+                <a href="#projects" class="nav-link">Proyectos</a>
+                <a href="#skills" class="nav-link">Habilidades</a>
+                <a href="#experience" class="nav-link">Experiencia</a>
+                <a href="#certifications" class="nav-link">Certificaciones</a>
+                <a href="#contact" class="nav-link">Contacto</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema claro/oscuro">
+                    <ion-icon name="moon-outline" id="theme-icon"></ion-icon>
+                </button>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ═══════════════════════════════════════════
+             HERO
+             ═══════════════════════════════════════════ -->
+        <section id="home" class="hero-section" aria-label="Presentación">
+            <div class="hero-background" aria-hidden="true">
+                <div class="glow-orb orb-1"></div>
+                <div class="glow-orb orb-2"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge">Disponible para trabajar</div>
+                    <h1 class="hero-title">Hola, soy <span class="text-glow">Ángel</span></h1>
+                    <h2 class="hero-subtitle">
+                        <span class="typing-text" id="typing-text"></span><span class="cursor">&nbsp;</span>
+                    </h2>
+                    <p class="hero-description">
+                        Profesional de Ingeniería de Software de Bogotá, Colombia. Experencia en soporte TI, desarrollo
+                        Full-Stack y automatización con agentes de IA. Apasionado por crear soluciones limpias,
+                        funcionales y de alto impacto.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary" id="btn-ver-proyectos">Ver Proyectos</a>
+                        <a href="#terminal-section" class="btn btn-secondary" id="btn-consola">
+                            <ion-icon name="terminal-outline" aria-hidden="true"></ion-icon>
+                            Jugar con la Consola
+                        </a>
+                    </div>
+                    <div class="social-links" aria-label="Redes sociales">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub de Ángel" id="link-github">
+                            <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                            aria-label="LinkedIn de Ángel" id="link-linkedin">
+                            <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+                        </a>
+                        <a href="mailto:angeldavid9@outlook.com" aria-label="Enviar email a Ángel" id="link-email">
+                            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-avatar-container" aria-hidden="true">
+                    <div class="avatar-glow"></div>
+                    <div class="avatar-frame">
+                        <div class="avatar-initials">AG</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════
+             TERMINAL
+             ═══════════════════════════════════════════ -->
+        <section id="terminal-section" class="terminal-section" aria-label="Consola interactiva">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Consola de Comandos</span>
+                    <h2 class="section-title">Terminal <span class="text-glow">Interactiva</span></h2>
+                    <p class="section-desc">Escribe comandos para explorar mi perfil de forma divertida. Prueba
+                        <code>help</code>, <code>about</code>, <code>skills</code>, <code>experience</code>…
+                    </p>
+                </div>
+
+                <div class="terminal-window" role="application" aria-label="Terminal interactiva">
+                    <div class="terminal-header" aria-hidden="true">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="terminal-title">angel@dev-portfolio: ~/profile</div>
+                        <div class="terminal-actions">
+                            <ion-icon name="copy-outline" id="terminal-copy-btn" title="Copiar historial" role="button"
+                                tabindex="0" aria-label="Copiar historial del terminal"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="terminal-body" id="terminal-body" role="log" aria-live="polite"
+                        aria-label="Salida del terminal">
+                        <div class="terminal-line">
+                            <span class="output-text system">Portafolio de Ángel David Garzón Prieto — v2.0.0</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="output-text system">Escribe <span class="cmd-highlight">help</span> para ver
+                                todos los comandos disponibles.</span>
+                        </div>
+                    </div>
+                    <div class="terminal-input-line">
+                        <span class="terminal-prompt" aria-hidden="true">guest@angel-dev:~$</span>
+                        <input type="text" id="terminal-input" autocomplete="off" spellcheck="false"
+                            aria-label="Entrada de comandos del terminal" placeholder="escribe un comando…">
+                    </div>
+                </div>
+
+                <div class="terminal-quick-tips" aria-label="Comandos rápidos">
+                    <span class="tip-label">Comandos rápidos:</span>
+                    <button class="quick-cmd-btn" data-cmd="about" id="qcmd-about">about</button>
+                    <button class="quick-cmd-btn" data-cmd="skills" id="qcmd-skills">skills</button>
+                    <button class="quick-cmd-btn" data-cmd="experience" id="qcmd-exp">experience</button>
+                    <button class="quick-cmd-btn" data-cmd="certifications" id="qcmd-certs">certifications</button>
+                    <button class="quick-cmd-btn" data-cmd="contact" id="qcmd-contact">contact</button>
+                    <button class="quick-cmd-btn" data-cmd="clear" id="qcmd-clear">clear</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════
+             PROJECTS
+             ═══════════════════════════════════════════ -->
+        <section id="projects" class="projects-section" aria-label="Proyectos">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Mi Trabajo</span>
+                    <h2 class="section-title">Mis <span class="text-glow">Proyectos</span></h2>
+                    <p class="section-desc">Proyectos reales desarrollados en pasantía y de práctica personal, aplicando
+                        las tecnologías de mi stack.</p>
+                </div>
+
+                <div class="project-filters reveal" role="group" aria-label="Filtrar proyectos por categoría">
+                    <button class="filter-btn active" data-filter="all" id="filter-all">Todos</button>
+                    <button class="filter-btn" data-filter="fullstack" id="filter-fullstack">Fullstack</button>
+                    <button class="filter-btn" data-filter="backend" id="filter-backend">Backend</button>
+                    <button class="filter-btn" data-filter="frontend" id="filter-frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="tools" id="filter-tools">Herramientas</button>
+                </div>
+
+                <div class="projects-grid" id="projects-grid">
+
+                    <!-- Proyecto 1 (REAL): Agente Hardware — Eulen -->
+                    <article class="project-card featured" data-category="fullstack" data-id="agente-eulen">
+                        <div class="project-img-wrapper">
+                            <img src="project-agente-eulen.webp"
+                                alt="Agente Inteligente de Asignación de Hardware — Grupo Eulen Colombia"
+                                class="project-img" loading="lazy">
+                            <div class="project-overlay" role="button" tabindex="0"
+                                aria-label="Ver detalles de Agente de Asignación de Hardware">
+                                <span class="btn-view-details">Ver detalles</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="featured-badge">⭐ Proyecto Real</span>
+                            <div class="project-meta">
+                                <span class="project-tag">Fullstack</span>
+                                <span class="project-tech">Python · MySQL · JavaScript/TypeScript</span>
+                            </div>
+                            <h3 class="project-title">Agente de Asignación de Hardware</h3>
+                            <p class="project-description">Agente inteligente desarrollado en Grupo Eulen Colombia para
+                                automatizar la asignación de hardware a empleados. Backend en Python, modelado en MySQL
+                                y UI web con JS/TS.</p>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-btn"
+                                    aria-label="Código del agente en GitHub">
+                                    <ion-icon name="logo-github" aria-hidden="true"></ion-icon> Código
+                                </a>
+                                <a href="#" class="link-btn primary btn-trigger-modal" data-id="agente-eulen"
+                                    aria-label="Ver detalles del agente">
+                                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon> Detalles
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 2: Spring Boot API -->
+                    <article class="project-card" data-category="backend" data-id="spring-api">
+                        <div class="project-img-wrapper">
+                            <div class="project-placeholder" data-icon="☕" data-label="Spring Boot API"
+                                style="--ph-color1:#1a0a2e;--ph-color2:#2d1b69;"></div>
+                            <div class="project-overlay" role="button" tabindex="0"
+                                aria-label="Ver detalles de REST API Spring Boot">
+                                <span class="btn-view-details">Ver detalles</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-tag">Backend</span>
+                                <span class="project-tech">Java · Spring Boot · MySQL</span>
+                            </div>
+                            <h3 class="project-title">REST API con Spring Boot</h3>
+                            <p class="project-description">API RESTful en Java con Spring Boot, autenticación JWT, CRUD
+                                completo y conexión con MySQL. Estructura en capas con Spring Data JPA.</p>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-btn"
+                                    aria-label="Código de Spring Boot API">
+                                    <ion-icon name="logo-github" aria-hidden="true"></ion-icon> Código
+                                </a>
+                                <a href="#" class="link-btn primary btn-trigger-modal" data-id="spring-api"
+                                    aria-label="Ver detalles de API Spring Boot">
+                                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon> Detalles
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 3: IT Automation Scripts -->
+                    <article class="project-card" data-category="tools" data-id="it-automation">
+                        <div class="project-img-wrapper">
+                            <div class="project-placeholder" data-icon="🐍" data-label="IT Automation"
+                                style="--ph-color1:#0a1a0e;--ph-color2:#0d2e1a;"></div>
+                            <div class="project-overlay" role="button" tabindex="0"
+                                aria-label="Ver detalles de IT Automation Scripts">
+                                <span class="btn-view-details">Ver detalles</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-tag">Herramientas</span>
+                                <span class="project-tech">Python · Active Directory · Shell</span>
+                            </div>
+                            <h3 class="project-title">IT Automation Scripts</h3>
+                            <p class="project-description">Scripts Python para automatizar tareas TI: creación masiva de
+                                cuentas en Active Directory, auditoría de permisos, e inventario de hardware.</p>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-btn"
+                                    aria-label="Código de scripts de automatización">
+                                    <ion-icon name="logo-github" aria-hidden="true"></ion-icon> Código
+                                </a>
+                                <a href="#" class="link-btn primary btn-trigger-modal" data-id="it-automation"
+                                    aria-label="Ver detalles de IT Automation">
+                                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon> Detalles
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 4: Portfolio Web -->
+                    <article class="project-card" data-category="frontend" data-id="portfolio">
+                        <div class="project-img-wrapper">
+                            <div class="project-placeholder" data-icon="🎨" data-label="Portfolio Web"
+                                style="--ph-color1:#0d0a1e;--ph-color2:#1a0f3d;"></div>
+                            <div class="project-overlay" role="button" tabindex="0"
+                                aria-label="Ver detalles del portafolio">
+                                <span class="btn-view-details">Ver detalles</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-tag">Frontend</span>
+                                <span class="project-tech">HTML5 · CSS3 · JavaScript</span>
+                            </div>
+                            <h3 class="project-title">Portfolio Web Personal</h3>
+                            <p class="project-description">Este mismo portafolio: terminal interactiva, animaciones CSS,
+                                dark/light mode, filtros de proyectos y diseño 100% responsive. Vanilla JS, cero
+                                frameworks.</p>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-btn"
+                                    aria-label="Código del portafolio en GitHub">
+                                    <ion-icon name="logo-github" aria-hidden="true"></ion-icon> Código
+                                </a>
+                                <a href="#" class="link-btn primary btn-trigger-modal" data-id="portfolio"
+                                    aria-label="Ver detalles del portafolio">
+                                    <ion-icon name="open-outline" aria-hidden="true"></ion-icon> Detalles
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════
+             SKILLS
+             ═══════════════════════════════════════════ -->
+        <section id="skills" class="skills-section" aria-label="Habilidades técnicas">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Tecnologías</span>
+                    <h2 class="section-title">Mis <span class="text-glow">Habilidades</span></h2>
+                    <p class="section-desc">Las tecnologías y herramientas que utilizo para dar vida a proyectos reales.
+                    </p>
+                </div>
+
+                <div class="skills-container">
+
+                    <!-- Lenguajes & Frontend -->
+                    <div class="skills-card reveal">
+                        <div class="skills-card-header">
+                            <ion-icon name="code-slash-outline" class="skills-icon" aria-hidden="true"></ion-icon>
+                            <h3>Lenguajes & Frontend</h3>
+                        </div>
+                        <ul class="skills-list" aria-label="Habilidades de lenguajes y frontend">
+                            <li class="skill-item">
+                                <span class="skill-name">JavaScript (ES6+)</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0"
+                                    aria-valuemax="100" aria-label="JavaScript: 82%">
+                                    <div class="skill-progress" data-width="82%"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">TypeScript</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                    aria-valuemax="100" aria-label="TypeScript: 70%">
+                                    <div class="skill-progress" data-width="70%"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0"
+                                    aria-valuemax="100" aria-label="Python: 78%">
+                                    <div class="skill-progress" data-width="78%"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Java</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                    aria-valuemax="100" aria-label="Java: 60%">
+                                    <div class="skill-progress" data-width="60%"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">HTML5 / CSS3</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0"
+                                    aria-valuemax="100" aria-label="HTML5/CSS3: 88%">
+                                    <div class="skill-progress" data-width="88%"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">React.js (básico)</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                                    aria-valuemax="100" aria-label="React.js: 55%">
+                                    <div class="skill-progress" data-width="55%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Backend & Bases de Datos -->
+                    <div class="skills-card reveal">
+                        <div class="skills-card-header">
+                            <ion-icon name="server-outline" class="skills-icon" aria-hidden="true"></ion-icon>
+                            <h3>Backend & Bases de Datos</h3>
+                        </div>
+                        <ul class="skills-list" aria-label="Habilidades de backend y bases de datos">
+                            <li class="skill-item">
+                                <span class="skill-name">Node.js</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0"
+                                    aria-valuemax="100" aria-label="Node.js: 72%">
+                                    <div class="skill-progress" data-width="72%"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Spring Boot</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="62" aria-valuemin="0"
+                                    aria-valuemax="100" aria-label="Spring Boot: 62%">
+                                    <div class="skill-progress" data-width="62%"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">APIs REST</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                    aria-valuemax="100" aria-label="APIs REST: 80%">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">MySQL (Workbench)</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100" aria-label="MySQL: 75%">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">MongoDB</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="58" aria-valuemin="0"
+                                    aria-valuemax="100" aria-label="MongoDB: 58%">
+                                    <div class="skill-progress" data-width="58%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- IT, IA & Herramientas -->
+                    <div class="skills-card reveal">
+                        <div class="skills-card-header">
+                            <ion-icon name="hardware-chip-outline" class="skills-icon" aria-hidden="true"></ion-icon>
+                            <h3>IT, IA & Herramientas</h3>
+                        </div>
+                        <ul class="skills-list" aria-label="Habilidades de TI, IA y herramientas">
+                            <li class="skill-item">
+                                <span class="skill-name">Active Directory</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                    aria-valuemax="100" aria-label="Active Directory: 70%">
+                                    <div class="skill-progress" data-width="70%"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Git / GitHub</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                    aria-valuemax="100" aria-label="Git / GitHub: 85%">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">IA & Automatización (Gemini, Claude)</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                                    aria-valuemax="100" aria-label="IA: 65%">
+                                    <div class="skill-progress" data-width="65%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div style="margin-top:1.2rem;">
+                            <div class="skill-tags" aria-label="Otras habilidades y herramientas">
+                                <span class="skill-tag">Scrum</span>
+                                <span class="skill-tag">Agile</span>
+                                <span class="skill-tag">Troubleshooting</span>
+                                <span class="skill-tag">Claude Code</span>
+                                <span class="skill-tag">Antigravity AI</span>
+                                <span class="skill-tag">Gemini API</span>
+                                <span class="skill-tag">AI Agents</span>
+                                <span class="skill-tag">Excel</span>
+                                <span class="skill-tag">CCNA (Redes)</span>
+                                <span class="skill-tag">Ciberseguridad</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════
+             EXPERIENCE / TIMELINE
+             ═══════════════════════════════════════════ -->
+        <section id="experience" class="experience-section" aria-label="Experiencia y trayectoria">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Trayectoria</span>
+                    <h2 class="section-title">Mi <span class="text-glow">Camino</span></h2>
+                    <p class="section-desc">Cronología de mi experiencia profesional y formación académica.</p>
+                </div>
+
+                <div class="timeline" aria-label="Línea de tiempo profesional">
+
+                    <!-- Experiencia 1: Grupo Eulen -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-date">Ene 2026 — Jul 2026 (Proyectado)</div>
+                        <div class="timeline-content">
+                            <h3>Pasante de Soporte TI & Desarrollador Full-Stack</h3>
+                            <span class="timeline-company">Grupo Eulen Colombia · Bogotá, Colombia</span>
+                            <p>
+                                Diseñé e implementé un <strong>agente inteligente</strong> para asignación automatizada
+                                de hardware usando Python (backend), MySQL (modelado de datos) y JavaScript/TypeScript
+                                (interfaz web). Paralelamente, resolví incidentes técnicos de infraestructura y
+                                administré el <strong>Directorio Activo</strong>: gestión de usuarios, grupos y permisos
+                                en carpetas compartidas bajo normas de seguridad corporativa.
+                            </p>
+                            <div class="timeline-tags" aria-label="Tecnologías utilizadas">
+                                <span class="timeline-tag">Python</span>
+                                <span class="timeline-tag">MySQL</span>
+                                <span class="timeline-tag">JavaScript</span>
+                                <span class="timeline-tag">TypeScript</span>
+                                <span class="timeline-tag">Active Directory</span>
+                                <span class="timeline-tag">IT Support</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Educación: UMB -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-date">2022 — 2026 (en curso)</div>
+                        <div class="timeline-content">
+                            <h3>Pregrado en Ingeniería de Software</h3>
+                            <span class="timeline-company">Universidad Manuela Beltrán · Bogotá, Colombia</span>
+                            <p>
+                                9.º semestre. Formación en fundamentos de software, estructuras de datos, arquitectura
+                                de sistemas, bases de datos, desarrollo web y metodologías ágiles. Graduación estimada:
+                                <strong>2026</strong>.
+                            </p>
+                            <div class="timeline-tags" aria-label="Tecnologías del pregrado">
+                                <span class="timeline-tag">Software Engineering</span>
+                                <span class="timeline-tag">Data Structures</span>
+                                <span class="timeline-tag">Agile</span>
+                                <span class="timeline-tag">Databases</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificaciones & Formación -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-date">2023 — 2026</div>
+                        <div class="timeline-content">
+                            <h3>Formación Continua & Certificaciones</h3>
+                            <span class="timeline-company">Anthropic · Cisco · Oracle · Scrumstudy · Sololearn</span>
+                            <p>
+                                Obtuve <strong>7 certificaciones</strong> en IA generativa, redes (CCNAv7),
+                                ciberseguridad, gestión de datos en la nube, Scrum y programación en Java. Aprendizaje
+                                continuo de las tecnologías más relevantes del ecosistema actual.
+                            </p>
+                            <div class="timeline-tags" aria-label="Temas de certificaciones">
+                                <span class="timeline-tag">Claude / Anthropic</span>
+                                <span class="timeline-tag">CCNAv7</span>
+                                <span class="timeline-tag">Ciberseguridad</span>
+                                <span class="timeline-tag">Oracle Cloud</span>
+                                <span class="timeline-tag">Scrum SFC</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════
+             CERTIFICATIONS
+             ═══════════════════════════════════════════ -->
+        <section id="certifications" class="certs-section" aria-label="Certificaciones">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Formación Complementaria</span>
+                    <h2 class="section-title">Mis <span class="text-glow">Certificaciones</span></h2>
+                    <p class="section-desc">Credenciales obtenidas en plataformas reconocidas internacionalmente,
+                        enfocadas en tecnología, redes e IA.</p>
+                </div>
+
+                <div class="certs-grid" aria-label="Lista de certificaciones">
+
+                    <div class="cert-card reveal" id="cert-claude101">
+                        <div class="cert-icon-wrap" aria-hidden="true">🤖</div>
+                        <div class="cert-info">
+                            <div class="cert-name">Claude 101</div>
+                            <div class="cert-issuer">Anthropic</div>
+                            <span class="cert-date">Abril 2026</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card reveal" id="cert-claudecode">
+                        <div class="cert-icon-wrap" aria-hidden="true">💻</div>
+                        <div class="cert-info">
+                            <div class="cert-name">Claude Code in Action</div>
+                            <div class="cert-issuer">Anthropic</div>
+                            <span class="cert-date">Abril 2026</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card reveal" id="cert-java">
+                        <div class="cert-icon-wrap" aria-hidden="true">☕</div>
+                        <div class="cert-info">
+                            <div class="cert-name">Introducción a Java</div>
+                            <div class="cert-issuer">Sololearn</div>
+                            <span class="cert-date">2025</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card reveal" id="cert-scrum">
+                        <div class="cert-icon-wrap" aria-hidden="true">🔄</div>
+                        <div class="cert-info">
+                            <div class="cert-name">Scrum Fundamentals (SFC)</div>
+                            <div class="cert-issuer">Scrumstudy</div>
+                            <span class="cert-date">2024</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card reveal" id="cert-ciberseguridad">
+                        <div class="cert-icon-wrap" aria-hidden="true">🛡️</div>
+                        <div class="cert-info">
+                            <div class="cert-name">Introducción a la Ciberseguridad</div>
+                            <div class="cert-issuer">Cisco</div>
+                            <span class="cert-date">2024</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card reveal" id="cert-ccna">
+                        <div class="cert-icon-wrap" aria-hidden="true">🌐</div>
+                        <div class="cert-info">
+                            <div class="cert-name">CCNAv7: Switching, Routing &amp; Wireless Essentials</div>
+                            <div class="cert-issuer">Cisco</div>
+                            <span class="cert-date">2023</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card reveal" id="cert-oracle">
+                        <div class="cert-icon-wrap" aria-hidden="true">☁️</div>
+                        <div class="cert-info">
+                            <div class="cert-name">Oracle Cloud Data Management Foundations</div>
+                            <div class="cert-issuer">Oracle</div>
+                            <span class="cert-date">2023</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════
+             CONTACT
+             ═══════════════════════════════════════════ -->
+        <section id="contact" class="contact-section" aria-label="Contacto">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Hablemos</span>
+                    <h2 class="section-title">Contacto <span class="text-glow">Directo</span></h2>
+                    <p class="section-desc">¿Tienes un proyecto, una vacante o alguna pregunta? Escríbeme, respondo en
+                        menos de 24 horas.</p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <div class="contact-info" aria-label="Información de contacto">
+
+                        <div class="contact-info-card reveal" id="contact-card-email">
+                            <div class="info-icon" aria-hidden="true">
+                                <ion-icon name="mail-unread-outline"></ion-icon>
+                            </div>
+                            <div class="info-text">
+                                <h4>Email</h4>
+                                <a href="mailto:angeldavid9@outlook.com">angeldavid9@outlook.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card reveal" id="contact-card-phone">
+                            <div class="info-icon" aria-hidden="true">
+                                <ion-icon name="call-outline"></ion-icon>
+                            </div>
+                            <div class="info-text">
+                                <h4>Teléfono</h4>
+                                <a href="tel:+573202501045">+57 320 2501045</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card reveal" id="contact-card-location">
+                            <div class="info-icon" aria-hidden="true">
+                                <ion-icon name="pin-outline"></ion-icon>
+                            </div>
+                            <div class="info-text">
+                                <h4>Ubicación</h4>
+                                <p>Bogotá D.C., Colombia<br><small style="color:var(--text-3)">Disponible: remoto o
+                                        presencial</small></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card reveal" id="contact-card-response">
+                            <div class="info-icon" aria-hidden="true">
+                                <ion-icon name="time-outline"></ion-icon>
+                            </div>
+                            <div class="info-text">
+                                <h4>Tiempo de respuesta</h4>
+                                <p>Menos de 24 horas 🚀</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <form class="contact-form reveal" id="contact-form" aria-label="Formulario de contacto" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Tu Nombre</label>
+                                <input type="text" id="contact-name" name="name" required
+                                    placeholder="Ingresa tu nombre" autocomplete="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Tu Correo</label>
+                                <input type="email" id="contact-email" name="email" required
+                                    placeholder="correo@ejemplo.com" autocomplete="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Asunto</label>
+                            <input type="text" id="contact-subject" name="subject" required
+                                placeholder="¿En qué te puedo ayudar?">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Mensaje</label>
+                            <textarea id="contact-message" name="message" rows="5" required
+                                placeholder="Describe tu proyecto, propuesta o pregunta..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                            <span class="btn-text">Enviar Mensaje</span>
+                            <ion-icon name="paper-plane-outline" aria-hidden="true"></ion-icon>
+                            <span class="btn-loader" aria-hidden="true"></span>
+                        </button>
+                        <div class="form-feedback" id="form-feedback" role="alert" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ═══════════════════════════════════════════
+         FOOTER
+         ═══════════════════════════════════════════ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Ángel David Garzón Prieto · Bogotá, Colombia</p>
+            <p class="footer-tagline">
+                Hecho con&nbsp;<ion-icon name="heart" class="heart-icon" aria-hidden="true"></ion-icon>&nbsp;y mucho
+                código
+            </p>
+        </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════════
+         PROJECT MODAL
+         ═══════════════════════════════════════════ -->
+    <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-label="Detalles del proyecto">
+        <div class="modal-card">
+            <button class="modal-close" id="modal-close" aria-label="Cerrar ventana de detalles">
+                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+            <div class="modal-grid">
+                <div class="modal-img-wrapper">
+                    <img src="" alt="" id="modal-img" class="modal-img">
+                </div>
+                <div class="modal-info">
+                    <div class="modal-tags" id="modal-tags"></div>
+                    <h3 class="modal-title" id="modal-title">Título del Proyecto</h3>
+                    <p class="modal-desc" id="modal-desc">Descripción del proyecto…</p>
+                    <div class="modal-features">
+                        <h4>Aspectos clave del desarrollo:</h4>
+                        <ul id="modal-features-list"></ul>
+                    </div>
+                    <div class="modal-links">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"
+                            id="modal-code-link">
+                            <ion-icon name="logo-github" aria-hidden="true"></ion-icon> Código en GitHub
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                            id="modal-demo-link">
+                            <ion-icon name="open-outline" aria-hidden="true"></ion-icon> Demo en Vivo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
